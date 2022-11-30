@@ -41,6 +41,18 @@ const myRouter:Routes=[{
   component:AddFriendsComponent
 },
 {
+  path:'userPage',
+  component:EmployeePageComponent
+},
+{
+  path:'viewCourse',
+  component:ViewCourseComponent
+},
+{
+  path:'viewFriend',
+  component:ViewFriendComponent
+},
+{
   path:'exit',
   component:AdminLoginComponent
 }]

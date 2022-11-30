@@ -10,6 +10,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
 import { AddCourseComponent } from './add-course/add-course.component';
+import { AddFriendsComponent } from './add-friends/add-friends.component';
 const myRouter:Routes=[{
   path:'',
   component:AdminLoginComponent
@@ -29,7 +30,8 @@ const myRouter:Routes=[{
     AdminLoginComponent,
     UserLoginComponent,
     UserRegistrationComponent,
-    AddCourseComponent
+    AddCourseComponent,
+    AddFriendsComponent
   ],
   imports: [
     BrowserModule,

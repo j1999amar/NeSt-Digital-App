@@ -15,6 +15,7 @@ import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
 import { ViewCourseComponent } from './view-course/view-course.component';
 import { ViewFriendComponent } from './view-friend/view-friend.component';
+import { ViewNavbarComponent } from './view-navbar/view-navbar.component';
 const myRouter:Routes=[{
   path:'',
   component:AdminLoginComponent
@@ -54,7 +55,8 @@ const myRouter:Routes=[{
     AdminNavbarComponent,
     AdminPageComponent,
     ViewCourseComponent,
-    ViewFriendComponent
+    ViewFriendComponent,
+    ViewNavbarComponent
   ],
   imports: [
     BrowserModule,

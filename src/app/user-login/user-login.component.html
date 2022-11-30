@@ -10,14 +10,14 @@
                         <h4>User Login</h4>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="" class="form-label">Username</label>
-                            <input type="text" name="" id="" class="form-control">
+                            <input name="EmpUsername" [(ngModel)]="EmpUsername" type="text" name="" id="" class="form-control">
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="" class="form-label">Password</label>
-                            <input type="password" name="" id="" class="form-control">
+                            <input name="EmpPassword" [(ngModel)]="EmpPassword" type="password" name="" id="" class="form-control">
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                            <button class="btn btn-primary">Login</button><br>
+                            <button class="btn btn-primary"(click)="readValue()" >Login</button><br>
                             <a href="">User Registration</a>
                         </div>
                     </div>

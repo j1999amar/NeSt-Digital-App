@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
+import { AddCourseComponent } from './add-course/add-course.component';
 const myRouter:Routes=[{
   path:'',
   component:AdminLoginComponent
@@ -27,7 +28,8 @@ const myRouter:Routes=[{
     NavbarComponent,
     AdminLoginComponent,
     UserLoginComponent,
-    UserRegistrationComponent
+    UserRegistrationComponent,
+    AddCourseComponent
   ],
   imports: [
     BrowserModule,

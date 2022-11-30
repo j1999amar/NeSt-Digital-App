@@ -1,24 +1,18 @@
 <app-view-navbar></app-view-navbar>
 <div class="container">
-    <div class="row">
-        <h3>View Friends</h3>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12- col-xl-12 col-xxl-12">
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Friend Name</th>
-                    <th scope="col">Friend Nickname</th>
-                    <th scope="col">Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr *ngFor="let i of data" >
-                    <th scope="row">{{i.name}}</th>
-                    <td>{{i.friendNickName}}</td>
-                    <td>{{i.DescribeYourFriend}}</td>
-                  </tr>
-               </tbody>
-              </table>  
+  <div class="row">
+    <h3>View Friends</h3>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12- col-xl-12 col-xxl-12">
+      <div class="row g-3">
+        <div class="col-12 col-sm 12 col-md-6 col-lg-4 col-xl-3 col-xxl-3" *ngFor="let i of data" >
+          <div class="card" style="width: 18rem;">
+            <div class="card-body  text-center">
+              <h5 class="card-title">Friend Name : {{i.name}}</h5>
+              <p class="card-text"> Friend Nickname : {{i.friendNickName}}<br> Description : {{i.DescribeYourFriend}}</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>

@@ -17,8 +17,14 @@ import { ViewCourseComponent } from './view-course/view-course.component';
 import { ViewFriendComponent } from './view-friend/view-friend.component';
 import { ViewNavbarComponent } from './view-navbar/view-navbar.component';
 import { EmployeePageComponent } from './employee-page/employee-page.component';
-const myRouter:Routes=[{
-  path:'',
+const myRouter:Routes=[
+  {
+    path:'',
+    component:NavbarComponent
+  },
+
+  {
+  path:'adminLogin',
   component:AdminLoginComponent
 },
 {

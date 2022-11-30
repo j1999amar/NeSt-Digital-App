@@ -13,7 +13,7 @@ export class UserLoginComponent {
   EmpPassword=""
 readValue=()=>{
   if(this.EmpUsername=="1122"&&this.EmpPassword=="12345"){
-    this.route.navigate(['/adminPage'])  
+    this.route.navigate(['/userPage'])  
   }else{
     alert("Login Failed")
     this.EmpUsername=""

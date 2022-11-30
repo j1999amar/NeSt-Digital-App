@@ -13,6 +13,7 @@ import { AddCourseComponent } from './add-course/add-course.component';
 import { AddFriendsComponent } from './add-friends/add-friends.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
+import { ViewCourseComponent } from './view-course/view-course.component';
 const myRouter:Routes=[{
   path:'',
   component:AdminLoginComponent
@@ -50,7 +51,8 @@ const myRouter:Routes=[{
     AddCourseComponent,
     AddFriendsComponent,
     AdminNavbarComponent,
-    AdminPageComponent
+    AdminPageComponent,
+    ViewCourseComponent
   ],
   imports: [
     BrowserModule,

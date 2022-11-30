@@ -17,13 +17,16 @@ import { ViewCourseComponent } from './view-course/view-course.component';
 import { ViewFriendComponent } from './view-friend/view-friend.component';
 import { ViewNavbarComponent } from './view-navbar/view-navbar.component';
 import { EmployeePageComponent } from './employee-page/employee-page.component';
+import { AbotusComponent } from './abotus/abotus.component';
 const myRouter:Routes=[
   {
     path:'',
-    component:NavbarComponent
+    component:AbotusComponent
+  },{
+    path:'aboutUs',
+    component:AbotusComponent
   },
-
-  {
+    {
   path:'adminLogin',
   component:AdminLoginComponent
 },
@@ -76,7 +79,8 @@ const myRouter:Routes=[
     ViewCourseComponent,
     ViewFriendComponent,
     ViewNavbarComponent,
-    EmployeePageComponent
+    EmployeePageComponent,
+    AbotusComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
 import { AddCourseComponent } from './add-course/add-course.component';
 import { AddFriendsComponent } from './add-friends/add-friends.component';
+import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 const myRouter:Routes=[{
   path:'',
   component:AdminLoginComponent
@@ -31,7 +32,8 @@ const myRouter:Routes=[{
     UserLoginComponent,
     UserRegistrationComponent,
     AddCourseComponent,
-    AddFriendsComponent
+    AddFriendsComponent,
+    AdminNavbarComponent
   ],
   imports: [
     BrowserModule,

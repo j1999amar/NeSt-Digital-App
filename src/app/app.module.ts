@@ -12,6 +12,7 @@ import { UserRegistrationComponent } from './user-registration/user-registration
 import { AddCourseComponent } from './add-course/add-course.component';
 import { AddFriendsComponent } from './add-friends/add-friends.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { AdminPageComponent } from './admin-page/admin-page.component';
 const myRouter:Routes=[{
   path:'',
   component:AdminLoginComponent
@@ -23,6 +24,21 @@ const myRouter:Routes=[{
 {
   path:'userRegistration',
   component:UserRegistrationComponent
+},
+{
+  path:'adminPage',
+  component:AdminPageComponent
+},{
+  path:'addCourse',
+  component:AddCourseComponent
+},
+{
+  path:'addFriend',
+  component:AddFriendsComponent
+},
+{
+  path:'exit',
+  component:AdminLoginComponent
 }]
 @NgModule({
   declarations: [
@@ -33,13 +49,14 @@ const myRouter:Routes=[{
     UserRegistrationComponent,
     AddCourseComponent,
     AddFriendsComponent,
-    AdminNavbarComponent
+    AdminNavbarComponent,
+    AdminPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule,
+    RouterModule.forChild(myRouter),
     HttpClientModule
   ],
   providers: [],

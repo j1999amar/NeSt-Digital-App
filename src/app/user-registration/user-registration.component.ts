@@ -34,7 +34,7 @@ export class UserRegistrationComponent {
     if(this.password==this.confrimPassword){
       this.route.navigate(['/userLogin'])
     }else{
-      alert("Login Failed")
+      alert("Invalid Failed")
       this.empname=""
       this.empId=""
       this.firstName=""
